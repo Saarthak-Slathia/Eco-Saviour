@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .logo{
+    color: #140d4f;
+    font-weight: 700;
+    font-family: 'Aladin', cursive;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+#header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+#header ul li a{
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 6px 15px;
+    color: #140d4f;
+}
+
+#header ul li a:hover{
+    background: #140d4f;
+    color: aliceblue;
+}
+
+#header ul li a.active{
+    background: #140d4f;
+    color: aliceblue;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #094b65, transparent);
+    z-index: 1000;
+}
+
+section #text{
+    position: absolute;
+    color: #140d4f;
+    font-size: 10vw;
+    line-height: 0.55em;
+    text-align: center;
+    font-family: 'Rancho', cursive;
+    transform: translateY(-50%);
+}
+
+section #text span{
+    font-size: 0.20em;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+section #btny{
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 8px 30px;
+    background-color: #fff;
+    color: #140d4f;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translateY(100px);
+}
+
+section #btny:hover{
+    background-color: transparent;
+    color: #fff;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.sec{
+    position: relative;
+    padding: 100px;
+    background-color: #094b65;
+}
+
+.sec h2#intro{
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec h2{
+    font-size: 2em;
+    margin-top: 2rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec h3{
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: 2rem;
+    margin-bottom: 10px;
+}
+
+.sec .fish{
+    position: relative;
+    opacity: .5;
+}
+
+.sec p{
+    font-size: 1em;
+    text-align: justify;
+    color: #fff;
+}
+
+.sec ul li{
+    color: rgb(192, 169, 169);
+    margin: 1rem;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, cyan);
+    border-radius: 50px;
+}
+
+@media (max-width: 999px){
+    #header ul{
+        display: none;
+    }
+
+    #header .logo{
+        text-align: center;
+        width: 100%;
+        font-size: 25px;
+    }
+
+    section #text{
+        transform: translateY(-200%);
+    }
+
+    section #text span{
+        font-size: 11px;
+    }
+
+    .sec{
+        padding: 100px 60px;
+        text-align: justify;
+    }
+
+    .sec p{
+        font-size: 0.8em;
+    }
+
+    .sec h3{
+        font-size: 1em;
+    }
+
+    .sec h2{
+        font-size: 1.5em;
+    }
+
+    .sec h2#intro{
+        font-size: 2em;
+    }
+
+    .sec h2{
+        text-align: left;
+    }
+
+    .sec ul li{
+        font-size: 0.8em;
+    }
+}
