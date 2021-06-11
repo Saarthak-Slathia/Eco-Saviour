@@ -9,7 +9,7 @@ The one who gave me inspiration 👇🏻
 
 Online Tutorials --> https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog
 
-One who provided with fonts 👇🏻
+One who provided me with fonts 👇🏻
 
 Google Fonts --> https://fonts.google.com/
 
